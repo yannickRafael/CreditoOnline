@@ -15,9 +15,11 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -152,14 +154,16 @@
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
           <h4>About</h4>
-          <p class="text-body-secondary">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          <p class="text-body-secondary">Yannick Rafael, é um desenvolvedor de software especializado no desenvolvimento de aplicativos móveis e desktop com java e dart+flutter. Também é experiente em automação usando python</p>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">
           <h4>Contact</h4>
           <ul class="list-unstyled">
             <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="www.github.com/yannickRafael" class="text-white">Siga-me no github</a></li>
-            <li><a href="yannickrafael286@gmail.com" class="text-white">mande-me um email</a></li>
+            <li><a href="https://github.com/yannickRafael" class="text-white" target="_blank">Siga-me no github</a></li>
+            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=yannickrafael286@gmail.com" class="text-white" target="_blank">mande-me um email</a></li>
+
+
           </ul>
         </div>
       </div>
@@ -198,6 +202,8 @@
           <div class="card shadow-sm">
             
             <div class="card-body">
+              
+              <center><img src="assets/images/movitel.webp" alt=""></center>
               <p class="card-text">Movitel - 20.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -206,6 +212,7 @@
                 </div>
                 <small class="text-body-secondary">desconto: 2%</small>
               </div>
+              <img src="" alt="">
             </div>
           </div>
         </div>
@@ -213,6 +220,7 @@
           <div class="card shadow-sm">
             
             <div class="card-body">
+              <center><img src="assets/images/vodacom.webp" alt=""></center>
               <p class="card-text">Vodacom - 20</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -228,6 +236,7 @@
           <div class="card shadow-sm">
             
             <div class="card-body">
+              <center><img src="assets/images/tmcel.webp" alt=""></center>
               <p class="card-text">TMCL - 20</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -244,6 +253,7 @@
           <div class="card shadow-sm">
             
             <div class="card-body">
+              <center><img src="assets/images/movitel.webp" alt=""></center>
               <p class="card-text">Movitel - 50</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -259,6 +269,7 @@
           <div class="card shadow-sm">
             
             <div class="card-body">
+              <center><img src="assets/images/vodacom.webp" alt=""></center>
               <p class="card-text">Vodacom - 50</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -274,6 +285,7 @@
           <div class="card shadow-sm">
             
             <div class="card-body">
+              <center><img src="assets/images/tmcel.webp" alt=""></center>
               <p class="card-text">TMCL - 50</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -290,6 +302,7 @@
           <div class="card shadow-sm">
             
             <div class="card-body">
+              <center><img src="assets/images/movitel.webp" alt=""></center>
               <p class="card-text">Movitel - 100</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -305,6 +318,7 @@
           <div class="card shadow-sm">
             
             <div class="card-body">
+              <center><img src="assets/images/vodacom.webp" alt=""></center>
               <p class="card-text">Vodacom - 100</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -320,6 +334,7 @@
           <div class="card shadow-sm">
             
             <div class="card-body">
+              <center><img src="assets/images/tmcel.webp" alt=""></center>
               <p class="card-text">TMCL - 100</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -350,6 +365,8 @@
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 
+  var bgcolor;
+
   function change_fav(button) {
     if(button.textContent=== '♡'){
       button.textContent = '♥'
@@ -360,12 +377,13 @@
 
   function setAdicionar(button){
     button.textContent = 'adicionar'
-    button.style.backgroundColor = '#212529'
+    button.style.backgroundColor = bgcolor
     button.style.color = '#0D6EFD'
   }
 
   function setRemover(button){
     button.textContent = 'remover'
+    bgcolor = button.style.backgroundColor
     button.style.backgroundColor = '#0D6EFD'
     button.style.color = 'black'
   }
